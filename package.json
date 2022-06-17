@@ -11,19 +11,21 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.1.12",
-    "@strapi/plugin-users-permissions": "4.1.12",
+    "@strapi/plugin-documentation": "^4.2.0",
     "@strapi/plugin-i18n": "4.1.12",
-    "pg": "8.6.0"
+    "@strapi/plugin-sentry": "^4.2.0",
+    "@strapi/plugin-seo": "^1.7.3",
+    "@strapi/plugin-users-permissions": "4.1.12",
+    "@strapi/strapi": "4.1.12",
+    "pg": "8.6.0",
+    "strapi-plugin-populate-deep": "^0.1.2",
+    "strapi-plugin-rest-cache": "^4.2.4"
   },
   "author": {
     "name": "Bluu Digital Tech Ltd."
   },
   "strapi": {
     "uuid": "5b01f702-e8ef-43f1-8e24-842c5a844248"
-  },
-  "engines": {
-    "node": "14.x.x"
   },
   "license": "MIT"
 }
