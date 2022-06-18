@@ -13,8 +13,8 @@
 
 FROM node:16-alpine
 # Installing libvips-dev for sharp Compatability
-RUN apt-get update && apt-get install libvips-dev -y
-RUN apk add --no-cache libc6-compat
+# RUN apt update && apt  
+RUN apk add --no-cache libc6-compat libvips-dev -y
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 WORKDIR /srv/app
