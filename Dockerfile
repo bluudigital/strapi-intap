@@ -1,4 +1,4 @@
-FROM strapi/base
+# FROM strapi/base
 ENV NODE_VERSION=16.15.1
 WORKDIR /srv/app
 COPY ./package.json ./
