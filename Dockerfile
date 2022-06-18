@@ -1,7 +1,8 @@
 FROM strapi/base
+FROM node:16-alpine
 WORKDIR /srv/app
 COPY ./package.json ./
-RUN yarn install && yarn cache clean --force
+RUN yarn cache clean --force && yarn install
 COPY . .
 ENV NODE_ENV development
 RUN yarn build
