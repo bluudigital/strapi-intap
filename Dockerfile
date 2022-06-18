@@ -1,5 +1,6 @@
 FROM strapi/base
-WORKDIR /app
+WORKDIR /srv/app
+VOLUME /srv/app
 COPY ./package.json ./
 RUN yarn install
 COPY . .
