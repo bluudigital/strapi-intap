@@ -2,7 +2,8 @@ FROM strapi/base
 WORKDIR /srv/app
 VOLUME /srv/app
 COPY ./package.json ./
-RUN yarn install --ignore-engines
+ARG CACHEBUST=1
+RUN yarn install
 COPY . .
 ENV NODE_ENV development
 RUN yarn build
