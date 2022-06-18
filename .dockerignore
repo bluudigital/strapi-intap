@@ -7,3 +7,9 @@ license.txt
 .strapi-updater.json
 *.md
 .git
+.tmp/
+.cache/
+.git/
+build/
+node_modules/
+data/
